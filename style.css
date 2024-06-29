@@ -1,0 +1,569 @@
+/* Global Styles - Sets up basic styling for the entire site */
+body {
+  background: url('Background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #eae4e4;
+  font-family: Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.675;
+}
+
+/* Header Content - Styles for the header section including company name, logo, navigation, and search bar */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+}
+
+.company-name h1,
+.company-name h4 {
+  margin: 0;
+}
+
+.company-name h1 {
+  color: #f39c12;
+}
+
+.company-logo {
+  height: 90px;
+  border-radius: 2px;
+}
+
+.company-details {
+  margin-left: 15px;
+}
+
+/* Navigation - Styles for the navigation bar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+/* Search Bar - Styles for the search bar */
+.search-bar {
+  display: flex;
+  margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: 2px solid #cccccc;
+  border-radius: 4px 0 0 4px;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 1.0rem;
+}
+
+.search-bar button {
+  background-color: #f39c12;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e67e22;
+}
+
+/* Home Section - Styles for the home section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  color: #eae4e4;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+}
+
+.home-image {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #f39c12;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.home-head-item {
+  font-size: 2.5em;
+  margin: 15px auto;
+  font-weight: 750;
+  color: #f39c12;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.35em;
+  margin: 20px auto;
+  line-height: 1.75;
+  color: #eae4e4;
+  text-align: center;
+  width: 80%;
+}
+
+.contact-info,
+.social-links {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contact-info span,
+.social-links a {
+  flex: 1 1 5%;
+  color: #e0e0e0;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgba(56, 56, 56, 0.7);
+  text-align: center;
+}
+
+.contact-info span:hover,
+.social-links a:hover {
+  color: #f39c12;
+}
+
+.social-links a span {
+  margin-left: 10px;
+}
+
+/* Section Container - Styles for the general section container */
+.container {
+  max-width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+/* Services Section - Styles for the services section */
+.services-section {
+  margin: 0 auto;
+  background-color: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.service-head-item {
+  font-size: 2.5em;
+  margin: 15px auto;
+  font-weight: 750;
+  color: #f39c12;
+}
+
+.service-text {
+  font-size: 1.25em;
+  margin: 20px auto;
+  color: #eae4e4;
+  text-align: left;
+  width: 85%;
+}
+
+.service-text li {
+  margin-bottom: 25px;
+}
+
+.service-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #f39c12;
+}
+
+/* Courses Section - Styles for the courses section */
+.courses-section {
+  margin-top: 20px;
+  background-color: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.course-slider {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.course-head-item {
+  font-size: 2.5em;
+  margin: 15px auto;
+  font-weight: 750;
+  color: #f39c12;
+  text-align: center;
+}
+
+.course-item {
+  background-color: rgba(56, 56, 56, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  border: 2px solid #f39c12;
+  border-radius: 5px;
+  text-align: center;
+  color: #eae4e4;
+  margin: 20px auto;
+}
+
+.course-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid #f39c12;
+}
+
+.course-title {
+  font-size: 1.5rem;
+  color: #eae4e4;
+}
+
+.course-description {
+  display: none;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+.show-description {
+  display: contents;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.prev,
+.next {
+  background-color: rgb(56, 56, 56);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #ffffff;
+  pointer-events: all;
+  transition: background-color 0.3s, transform 0.3s;
+  border: none;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(70, 70, 70);
+  transform: scale(1.1);
+}
+
+.prev:active,
+.next:active {
+  transform: scale(0.9);
+}
+
+.prev {
+  transform: rotate(-90deg);
+}
+
+.next {
+  transform: rotate(-90deg);
+}
+
+/* Blog Section - Styles for the blog section */
+.blog-section {
+  background-color: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+
+  max-width: 1200px;
+}
+
+.blog-post {
+  margin: 20px auto;
+  width: 85%;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(56, 56, 56, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-head-item {
+  font-size: 2.5em;
+  margin: 15px auto;
+  font-weight: 750;
+  color: #f39c12;
+  text-align: center;
+}
+
+.blog-post h2 {
+  color: #eae4e4;
+  font-size: 1.75em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.blog-post img {
+  display: block;
+  margin: 20px auto;
+  max-width: 75%;
+  border-radius: 10px;
+  border: 2px solid #f39c12;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post p {
+  color: #eae4e4;
+  font-size: 1.25em;
+  line-height: 1.75;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-post {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .blog-post h2 {
+    font-size: 1.5em;
+  }
+
+  .blog-post p {
+    font-size: 1.1em;
+  }
+}
+
+/* Contact Form - Styles for the contact form section */
+.contact-form {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  background: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-head-item {
+  font-size: 2.5em;
+  margin: 15px auto;
+  font-weight: 700;
+  color: #f39c12;
+}
+
+#contactForm {
+  margin-top: 20px;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #f39c12;
+  border-radius: 5px;
+  background-color: rgba(56, 56, 56, 0.9);
+  color: #eae4e4;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#contactForm textarea {
+  resize: vertical;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: #ccc;
+}
+
+#contactForm button {
+  width: 100%;
+  background-color: #f39c12;
+  border: none;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+  background-color: #e67e22;
+}
+
+.contact-image {
+  max-width: 75%;
+  border: 2px solid #f39c12;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+/* Footer Styles - Styles for the footer section */
+footer {
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: rgba(56, 56, 56, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #eae4e4;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Zoom Effect - Zoom effect applied on hover for specific elements */
+.course-item img:hover,
+.company-logo:hover,
+.blog-section img:hover,
+.contact-image:hover,
+.home-image:hover,
+.service-image img:hover {
+  transform: scale(1.1);
+}
+
+/* Global Box-Sizing and Transition - Applies box-sizing border-box and transition to all elements */
+* {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+/* Responsive Slider Adjustments - Media queries for adjusting slider items for different screen sizes */
+@media (min-width: 900px) {
+  .slide {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 600px) {
+  .slide {
+    min-width: 25%;
+  }
+}
+
+/* Shake animation - Keyframes for the shake animation effect */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Apply shake animation on hover for contact info and social links */
+.contact-info span:hover,
+.social-links a:hover {
+  animation: shake 0.5s ease;
+}
+
+/* Shake animation for social links */
+.social-links a,
+.social-links a:hover,
+.social-links a:focus {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+/* Apply shake animation on hover for social links */
+.social-links a:hover {
+  animation: shake 0.5s;
+}
+

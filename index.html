@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>CodersDome</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="description" content="CodersDome - Software Development, Training & Consulting">
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      function showSection(id) {
+        sections.forEach(section => {
+          if (section.id === id) {
+            section.style.display = "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          showSection(targetId);
+        });
+      });
+      showSection("home");
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="company-name">
+        <img src="logo.png" alt="CodersDome Logo" class="company-logo">
+        <div class="company-details">
+          <h1>CodersDome Pvt Ltd.</h1>
+          <h4>Software Development, Training & Consulting</h4>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-bar">
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="searchButton" type="button">Go</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="home-section">
+    <div>
+      <h1><strong>Welcome to CodersDome!</strong></h1>
+      <p><b>Your journey to learning with us starts here.</b></p>
+    </div>
+    <div class="home-head-item">About Us</div>
+    <div class="home-image-container">
+      <img src="home.png" alt="Home Image" class="home-image">
+    </div>
+    <div>
+      <p class="about-text">We are a group of IT professionals with over 15 years of experience in the complete
+        software development lifecycle. We provide training in full stack development along with individual topics
+        like C, C++,Java, .Net, Data Structure, Design patterns, React, Angular, MongoDB, AWS, Azure, OpenShift, Docker,
+        Jenkins, etc. Our style of training combines high-quality theoretical education with extensive practical
+        exposure to
+        live projects.</p>
+    </div>
+    <div class="contact-info">
+      <span><i class="fas fa-phone-alt"></i> +91 9923459089</span>
+      <span><i class="far fa-envelope"></i> info@codersdome.com</span>
+      <span><i class="fas fa-map-marker-alt"></i> Kumar Palmgrove, Parge Nagar, Kondhwa, Pune-411048</span>
+    </div>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+      <a href="#"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+      <a href="#"><i class="fab fa-youtube"></i><span>Youtube</span></a>
+      <a href="#"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+      <a href="#"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="service-head-item">Our Services</div>
+      <div class="service-image">
+        <img src="profile.jpg" alt="Service Image">
+      </div>
+      <ul class="service-text">
+        <li><strong><u>Web Application Development</u></strong><br>
+          As a reliable software development services provider, we build robust web applications with stunning & radical
+          UI/UX. Get your web app customized to streamline your business processes & attract more visitors. The smooth
+          layouts and stylish design set you apart from the average. Start your growth with us.
+        </li>
+        <li><strong><u>Mobile Application Development</u></strong><br>
+          Advanced mobile application development to quickly build a high-engaging mobile app. We prioritize interactive
+          user experience and robust backend functionality. Our custom application development services include both
+          native and hybrid apps.
+        </li>
+        <li><strong><u>Cloud Application Development</u></strong><br>
+          We design and deliver scalable, portable, and secure cloud applications and help migrate apps of any
+          complexity from on-premises infrastructures to the cloud.
+        </li>
+        <li><strong><u>Software Support and Maintenance</u></strong><br>
+          We ensure the smooth functioning and relevancy of your software via ongoing performance monitoring, proactive
+          optimization, fast issue resolution, delivery of new features, and integrations.
+        </li>
+        <li><strong><u>Training</u></strong><br>
+          Boost your coding skills with software development courses. Software development is a rapidly-changing field,
+          and software developers need to stay up-to-date on the latest advancements regarding tools, frameworks,
+          programming languages, & apps to achieve success. Master the latest coding tools, strategies, and techniques
+          through our courses.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="courses" class="courses-section">
+    <div class="container">
+      <div class="course-head-item">Our Career Oriented Courses</div>
+      <p class="about-text">Cutting-edge curriculum designed by industry experts to develop job-ready skills.</p>
+      <div class="course-slider">
+        <div class="slider-container">
+          <div class="slider">
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course1.jpg" alt="Java Fullstack Development">
+                <div class="course-title">Java Fullstack Development</div>
+                <div class="course-description">
+                  <p>Fullstack web development with Java, React/Angular, MySQL, Mongo DB, Docker, Kubernets and Cloud.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course2.jpg" alt="C#.Net Core Fullstack Development">
+                <div class="course-title">C#.Net Core Fullstack Development</div>
+                <div class="course-description">
+                  <p>Fullstack web development with C#.Net core, React/Angular, SQL Server, Mongo DB, Docker, Kubernets
+                    and Cloud.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course3.jpg" alt="Front-End Development">
+                <div class="course-title">Front-End Development</div>
+                <div class="course-description">
+                  <p>Learn front end development with HTM, CSS, Java Script and React/Angular.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course4.jpg" alt="Data Structure">
+                <div class="course-title">Data structure</div>
+                <div class="course-description">
+                  <p>Learn basic to advanced data structures with C++/Java/C#.Net</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course5.jpg" alt="OOP and Design Patterns">
+                <div class="course-title">OOP and Design Patterns</div>
+                <div class="course-description">
+                  <p>Learn basic to advanced OOP concepts and Design patterns with C++/Java/C#.Net</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course6.jpg" alt="Multi-Threading">
+                <div class="course-title">Multi-Threading</div>
+                <div class="course-description">
+                  <p>Learn basic to advanced multi threading concepts with examples using Java/C#.Net</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course7.jpg" alt="Introduction to Programming using C++/Java/C#.Net">
+                <div class="course-title">Introduction to Programming using C++/Java/C#.Net</div>
+                <div class="course-description">
+                  <p>Learn basics to advance programming concepts with examples using C++/Java/C#.Net</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course8.jpg" alt="Object-Oriented Programming using C++/Java/C#.Net">
+                <div class="course-title">Object-Oriented Programming using C++/Java/C#.Net</div>
+                <div class="course-description">
+                  <p>Learn basics to advance object oriented concepts with examples using C++/Java/C#.Net</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="course-item">
+                <img src="course9.jpg" alt="Web Development using HTML, CSS, and JavaScript">
+                <div class="course-title">Web Development using HTML, CSS, and JavaScript</div>
+                <div class="course-description">
+                  <p>Learn Website development using HTML, CSS and JavaScript.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more courses here -->
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="prev" aria-label="Previous slide">←</button>
+          <button class="next" aria-label="Next slide">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog-section">
+    <div class="container">
+      <div class="blog-head-item">Our Blog</div>
+      <div class="blog-post">
+        <h2>Microservices</h2>
+        <img src="blog.png" alt="Microservices">
+        <p>As the name implies, a microservices architecture is an approach to building a server application as a set of
+          small services. That means a microservices architecture is mainly oriented to the back-end, although the
+          approach is also being used for the front end. Each service runs in its own process and communicates with
+          other processes using protocols such as HTTP/HTTPS, WebSockets, or AMQP. Each microservice implements a
+          specific end-to-end domain or business capability within a certain context boundary, and each must be
+          developed autonomously and be deployable independently. Finally, each microservice should own its related
+          domain data model and domain logic (sovereignty and decentralized data management) and could be based on
+          different data storage technologies (SQL, NoSQL) and different programming languages.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <div class="contact-head-item">Contact Us</div>
+    <img src="contact.png" alt="Contact Image" class="contact-image">
+    <form id="contactForm" onsubmit="sendEmail(); return false;">
+      <input type="text" id="contactName" placeholder="Enter Your Name" required>
+      <input type="tel" id="contactPhone" placeholder="Enter Your Phone Number" maxlength="10" required>
+      <input type="email" id="contactEmail" placeholder="Enter Your Email" required>
+      <textarea id="contactMessage" rows="1" placeholder="Enter Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> <b>Aklavya Kumar</b></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
